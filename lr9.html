@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра 21</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="game">
+        <header class="header">
+            <p class="eyebrow">CARD TABLE</p>
+            <h1>Гра 21</h1>
+            <p>Випробуй удачу у трьох раундах</p>
+        </header>
+
+        <section class="scoreboard">
+            <div class="score-box">
+                <span id="player-name">Гравець</span>
+                <strong id="player-score">0</strong>
+                <small>очок</small>
+            </div>
+
+            <div class="round-box">
+                <span>Раунд</span>
+                <strong id="round-number">1 / 3</strong>
+            </div>
+
+            <div class="score-box">
+                <span>Комп'ютер</span>
+                <strong id="computer-score">0</strong>
+                <small>очок</small>
+            </div>
+        </section>
+
+        <section class="table">
+            <div class="player-side">
+                <h2 id="player-title">Карта гравця</h2>
+                <div class="card-slot" id="player-card-slot">
+                    <div class="card-placeholder">?</div>
+                </div>
+                <p class="card-points" id="player-card-points">
+                    Очікування карти
+                </p>
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div class="player-side">
+                <h2>Карта комп'ютера</h2>
+                <div class="card-slot" id="computer-card-slot">
+                    <div class="card-placeholder">?</div>
+                </div>
+                <p class="card-points" id="computer-card-points">
+                    Очікування карти
+                </p>
+            </div>
+        </section>
+
+        <p class="game-message" id="game-message">
+            Натисни кнопку, щоб почати гру.
+        </p>
+
+        <div class="buttons">
+            <button id="draw-button">Витягнути карти</button>
+            <button id="restart-button">Почати заново</button>
+        </div>
+
+        <footer>
+            Три раунди
+        </footer>
+    </main>
+</body>
+</html>
